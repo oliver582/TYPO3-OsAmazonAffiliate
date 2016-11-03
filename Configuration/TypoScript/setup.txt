@@ -1,0 +1,57 @@
+
+plugin.tx_osamazonaffiliate_product {
+	view {
+		templateRootPaths.0 = {$plugin.tx_osamazonaffiliate_product.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_osamazonaffiliate_product.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_osamazonaffiliate_product.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_osamazonaffiliate_product.persistence.storagePid}
+	}
+}
+
+plugin.tx_osamazonaffiliate._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-os-amazon-affiliate table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-os-amazon-affiliate table th {
+		font-weight:bold;
+	}
+
+	.tx-os-amazon-affiliate table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
+
+ # Module configuration
+module.tx_osamazonaffiliate_tools_osamazonaffiliateproduct {
+	persistence {
+		storagePid = {$module.tx_osamazonaffiliate_product.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_osamazonaffiliate_product.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_osamazonaffiliate_product.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_osamazonaffiliate_product.view.layoutRootPath}
+	}
+}

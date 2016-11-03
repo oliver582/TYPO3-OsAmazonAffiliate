@@ -1,0 +1,222 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+        <!-- <langChildren>1</langChildren>!-->
+    </meta>
+
+    <sheets>
+
+        <main>
+            <ROOT>
+                -
+                <TCEforms>
+                    <sheetTitle>Plugin Ansicht Optionen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <switchableControllerActions>
+                        <TCEforms>
+                            <label>Bitte wählen Sie die View aus</label>
+
+                            <!--
+                            <onChange>reload</onChange>
+                            -->
+
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">Produkt - Übersicht</numIndex>
+                                        <numIndex index="1">Products->list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">Produkt - Detail</numIndex>
+                                        <numIndex index="1">Products->show</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </switchableControllerActions>
+
+
+                </el>
+            </ROOT>
+        </main>
+
+        <pagesel>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Seiten ID Optionen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <!-- PID Single Page -->
+                    <settings.newPid>
+                        <TCEforms>
+                            <label>Seiten ID für 'Neu' auswählen</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.newPid>
+
+                    <!-- PID Single Page -->
+                    <settings.listPid>
+                        <TCEforms>
+                            <label>Seiten ID für 'Übersicht' auswählen</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.listPid>
+
+                    <!-- PID Single Page -->
+                    <settings.showPid>
+                        <TCEforms>
+                            <label>Seiten ID für 'Detailansicht' auswählen</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.showPid>
+
+                    <!-- PID Single Page -->
+                    <settings.editPid>
+                        <TCEforms>
+                            <label>Seiten ID für 'Bearbeiten' auswählen</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.editPid>
+
+                    <!-- PID Single Page -->
+                    <settings.deletePid>
+                        <TCEforms>
+                            <label>Seiten ID für 'Löschen' auswählen</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.deletePid>
+
+                </el>
+            </ROOT>
+        </pagesel>
+
+
+        <others>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Sonstige Optionen</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <!-- PID Single Page -->
+                    <settings.category>
+                        <TCEforms>
+                            <label>Welche Produktkategorien</label>
+                            <config>
+                                <type>select</type>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0"></numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">Dartautomaten</numIndex>
+                                        <numIndex index="1">Dartautomaten</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <numIndex index="0">Dartpfeile</numIndex>
+                                        <numIndex index="1">Dartpfeile</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.category>
+                </el>
+            </ROOT>
+        </others>
+
+        <manualselect>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Manuelle Auswahl</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <!-- PID Single Page -->
+                    <settings.ansi>
+                        <TCEforms>
+                            <label>Welche Produkt sollen angezeigt werden</label>
+                            <config>
+                              <type>input</type>
+                              <size>20</size>
+                              <max>30</max>
+                              <eval>trim</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.ansi>
+                </el>
+            </ROOT>
+        </manualselect>
+
+
+    </sheets>
+</T3DataStructure>

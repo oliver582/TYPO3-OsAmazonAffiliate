@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-11-02T15:40:26Z" product-name="os_amazon_affiliate">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="ansi.description">
+				<source>ansi</source>
+			</trans-unit>
+			<trans-unit id="price.description">
+				<source>price</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="date.description">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="rate.description">
+				<source>rate</source>
+			</trans-unit>
+			<trans-unit id="taxe.description">
+				<source>taxe</source>
+			</trans-unit>
+			<trans-unit id="affiliate_link.description">
+				<source>affiliateLink</source>
+			</trans-unit>
+			<trans-unit id="affiliate_button_text.description">
+				<source>affiliateButtonText</source>
+			</trans-unit>
+			<trans-unit id="intern_link.description">
+				<source>internLink</source>
+			</trans-unit>
+			<trans-unit id="intern_button_text.description">
+				<source>internButtonText</source>
+			</trans-unit>
+			<trans-unit id="all_review.description">
+				<source>allReview</source>
+			</trans-unit>
+			<trans-unit id="single_review.description">
+				<source>singleReview</source>
+			</trans-unit>
+			<trans-unit id="date_review.description">
+				<source>dateReview</source>
+			</trans-unit>
+			<trans-unit id="recommendation.description">
+				<source>recommendation</source>
+			</trans-unit>
+			<trans-unit id="aktive.description">
+				<source>aktive</source>
+			</trans-unit>
+			<trans-unit id="category.description">
+				<source>category</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

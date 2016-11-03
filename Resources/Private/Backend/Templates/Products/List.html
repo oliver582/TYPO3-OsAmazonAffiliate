@@ -1,0 +1,51 @@
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="content">
+<h1>Listing for Products</h1>
+
+<f:flashMessages />
+
+<table class="tx_osamazonaffiliate table table-striped" >
+	<tr>
+    <th><f:translate key="tx_osamazonaffiliate_domain_model_products.ansi" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.name" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.price" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.description" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.date" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.taxe" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.aktive" /></th>
+		<th><f:translate key="tx_osamazonaffiliate_domain_model_products.category" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{products}" as="product">
+		<tr>
+      <td><f:link.action action="show" arguments="{products : product}"> {product.ansi}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.name}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.price}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.date -> f:format.date()}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.taxe}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.aktive}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{products : product}"> {product.category}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{products : product}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{products : product}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Products</f:link.action>
+</f:section>
